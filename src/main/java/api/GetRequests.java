@@ -20,6 +20,7 @@ public class GetRequests {
     }
 
     public static void getAllUsers() throws IOException{
+        String accessToken = PostRequests.getAccessToken();
         HttpGet getUsers = new HttpGet(urlString);
         getUsers.setHeader("Content-type", "application/json");
         getUsers.setHeader("Authorization", accessToken);

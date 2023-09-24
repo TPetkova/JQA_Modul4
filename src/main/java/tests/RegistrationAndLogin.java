@@ -39,6 +39,7 @@ public class RegistrationAndLogin {
         Assert.assertTrue(responseCode.contains("200"), responseCode);
         String authMessage = postRequests.getLoginMessage();
         Assert.assertTrue(authMessage.contains("success"), authMessage);
+
     }
 
     @Test(priority = 2)

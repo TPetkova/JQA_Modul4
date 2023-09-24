@@ -61,6 +61,7 @@ public class PostRequests {
             if (authCode.equals("0")) {
                 accessToken = json.getAccessToken(responseBody);
             }
+            System.out.println(accessToken);
         }
     }
 
