@@ -1,6 +1,8 @@
 {
   "baseUrl": "http://restapi.adequateshop.com",
   "QA-env": "http://restapi.adequateshop.com/api",
-  "username": "zdravko.zafirov+2@gmail.com",
-  "password": "123456"
+  "username": "some_test5@gmail.com",
+  "password": "apitesting",
+  "name": "Testing123",
+  "userId": "11133"
 }
