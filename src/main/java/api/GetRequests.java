@@ -54,14 +54,6 @@ public class GetRequests {
 
     }
 
-    public static String getResponseCode() {
-        return responseCode;
-    }
-
-    public static String getAccessToken() {
-        return accessToken = PostRequests.getAccessToken();
-    }
-
     public void getUserById(String accessToken) throws IOException{
         HttpGet getUserById = new HttpGet(urlUsers);
         getUserById.setHeader("Content-type", "application/json");
@@ -82,6 +74,18 @@ public class GetRequests {
         System.out.println(responseCode);
         System.out.println(responseBody);
 
+    }
+
+    public static String getResponseCode() {
+        return responseCode;
+    }
+
+    public static String getAccessToken() {
+        return accessToken = PostRequests.getAccessToken();
+    }
+
+    public static String getResponseBody() {
+        return responseBody;
     }
 
     ///api/users/{{user_id}}

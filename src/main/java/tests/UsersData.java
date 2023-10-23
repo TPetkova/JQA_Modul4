@@ -40,8 +40,8 @@ public class UsersData {
         getRequests.getUserById(GetRequests.getAccessToken());
         String responseCode = getRequests.getResponseCode();
         Assert.assertTrue(responseCode.contains("200"), responseCode);
-        //System.out.println(PostRequests.getResponseBody());
-        //Assert.assertTrue(PostRequests.getResponseBody().contains("id"));
-        //Assert.assertTrue(PostRequests.getResponseBody().contains(configData.getString("userId")));
+        String responseBody = GetRequests.getResponseBody();
+        Assert.assertTrue(responseBody.contains("id"));
+        Assert.assertTrue(responseBody.contains(configData.getString("userId")));
     }
 }
